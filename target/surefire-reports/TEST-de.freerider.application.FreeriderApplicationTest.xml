@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="de.freerider.application.FreeriderApplicationTest" time="1.055" tests="3" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/test-classes:/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/classes:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.0/spring-boot-starter-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/spring-context/6.0.9/spring-context-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-aop/6.0.9/spring-aop-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-expression/6.0.9/spring-expression-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.0/spring-boot-autoconfigure-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.0/spring-boot-starter-logging-3.1.0.jar:/Users/andy/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/andy/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/andy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/Users/andy/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/andy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/Users/andy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/andy/.m2/repository/org/springframework/spring-core/6.0.9/spring-core-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-jcl/6.0.9/spring-jcl-6.0.9.jar:/Users/andy/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.0/spring-boot-starter-test-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-test/3.1.0/spring-boot-test-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.0/spring-boot-test-autoconfigure-3.1.0.jar:/Users/andy/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/andy/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/andy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/andy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/andy/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/andy/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/andy/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/andy/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/andy/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/andy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/andy/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/andy/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/andy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/andy/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/andy/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/Users/andy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar:/Users/andy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/andy/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/Users/andy/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/andy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/andy/.m2/repository/org/springframework/spring-test/6.0.9/spring-test-6.0.9.jar:/Users/andy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="DE"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/surefire/surefirebooter-20230604125358940_3.jar /Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/surefire 2023-06-04T12-53-58_899-jvmRun1 surefire-20230604125358940_1tmp surefire_0-20230604125358940_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/test-classes:/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/classes:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter/3.1.0/spring-boot-starter-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/spring-context/6.0.9/spring-context-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-aop/6.0.9/spring-aop-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-beans/6.0.9/spring-beans-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-expression/6.0.9/spring-expression-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.1.0/spring-boot-autoconfigure-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.1.0/spring-boot-starter-logging-3.1.0.jar:/Users/andy/.m2/repository/ch/qos/logback/logback-classic/1.4.7/logback-classic-1.4.7.jar:/Users/andy/.m2/repository/ch/qos/logback/logback-core/1.4.7/logback-core-1.4.7.jar:/Users/andy/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar:/Users/andy/.m2/repository/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar:/Users/andy/.m2/repository/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar:/Users/andy/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/andy/.m2/repository/org/springframework/spring-core/6.0.9/spring-core-6.0.9.jar:/Users/andy/.m2/repository/org/springframework/spring-jcl/6.0.9/spring-jcl-6.0.9.jar:/Users/andy/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.1.0/spring-boot-starter-test-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-test/3.1.0/spring-boot-test-3.1.0.jar:/Users/andy/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.1.0/spring-boot-test-autoconfigure-3.1.0.jar:/Users/andy/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/andy/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/Users/andy/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/andy/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/andy/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/Users/andy/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/Users/andy/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/andy/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/andy/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/andy/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.3/junit-jupiter-5.9.3.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/andy/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/andy/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/andy/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.3/junit-jupiter-params-5.9.3.jar:/Users/andy/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/andy/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/andy/.m2/repository/org/mockito/mockito-core/5.3.1/mockito-core-5.3.1.jar:/Users/andy/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar:/Users/andy/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/andy/.m2/repository/org/mockito/mockito-junit-jupiter/5.3.1/mockito-junit-jupiter-5.3.1.jar:/Users/andy/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/andy/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/andy/.m2/repository/org/springframework/spring-test/6.0.9/spring-test-6.0.9.jar:/Users/andy/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/andy"/>
+    <property name="user.language" value="de"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="generateReports" value="false"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/20.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider/target/surefire/surefirebooter-20230604125358940_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="20.0.1"/>
+    <property name="user.name" value="andy"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/andy/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/0c/hbw554x16sg2yntvvk7_p8wr0000gn/T/"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="user.dir" value="/Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="39586"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/andy/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="20.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="64.0"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%msg%n"/>
+  </properties>
+  <testcase name="test_100" classname="de.freerider.application.FreeriderApplicationTest" time="0.439">
+    <system-out><![CDATA[12:53:59,569 |-WARN in Logger[org.springframework.core.env.PropertySourcesPropertyResolver] - No appenders present in context [default] for logger [org.springframework.core.env.PropertySourcesPropertyResolver].
+12:53:59,572 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@13cda7c9 - Adding [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/base.xml] to configuration watch list.
+12:53:59,572 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5aa6202e - URL [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/base.xml] is not of type file
+12:53:59,573 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@13cda7c9 - Adding [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+12:53:59,573 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5aa6202e - URL [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/defaults.xml] is not of type file
+12:53:59,575 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+12:53:59,575 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+12:53:59,575 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+12:53:59,575 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@13cda7c9 - Adding [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+12:53:59,576 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5aa6202e - URL [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/console-appender.xml] is not of type file
+12:53:59,577 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@13cda7c9 - Adding [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/file-appender.xml] to configuration watch list.
+12:53:59,577 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@5aa6202e - URL [jar:file:/Users/andy/.m2/repository/org/springframework/boot/spring-boot/3.1.0/spring-boot-3.1.0.jar!/org/springframework/boot/logging/logback/file-appender.xml] is not of type file
+12:53:59,579 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+12:53:59,579 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+12:53:59,579 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+12:53:59,579 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+12:53:59,579 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+12:53:59,579 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+12:53:59,579 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+12:53:59,579 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+12:53:59,579 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+12:53:59,579 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+12:53:59,580 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+12:53:59,580 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+12:53:59,580 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+12:53:59,580 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+12:53:59,580 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+12:53:59,580 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+12:53:59,580 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+12:53:59,581 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1997625595 - setting totalSizeCap to 0 Bytes
+12:53:59,581 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1997625595 - Archive files will be limited to [10 MB] each.
+12:53:59,581 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1997625595 - Will use gz compression
+12:53:59,581 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1997625595 - Will use the pattern /var/folders/0c/hbw554x16sg2yntvvk7_p8wr0000gn/T//spring.log.%d{yyyy-MM-dd}.%i for the active file
+12:53:59,581 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@91c4a3f - The date pattern is 'yyyy-MM-dd' from file name pattern '/var/folders/0c/hbw554x16sg2yntvvk7_p8wr0000gn/T//spring.log.%d{yyyy-MM-dd}.%i.gz'.
+12:53:59,581 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@91c4a3f - Roll-over at midnight.
+12:53:59,582 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@91c4a3f - Setting initial period to 2023-06-04T10:53:17.700Z
+12:53:59,582 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: /var/folders/0c/hbw554x16sg2yntvvk7_p8wr0000gn/T//spring.log
+12:53:59,582 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [/var/folders/0c/hbw554x16sg2yntvvk7_p8wr0000gn/T//spring.log]
+12:53:59,582 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+12:53:59,582 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating INFO level on Logger[ROOT] onto the JUL framework
+12:53:59,582 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+12:53:59,582 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+12:53:59,582 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to OFF
+12:53:59,582 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@3af9aa66 - Propagating OFF level on Logger[org.springframework] onto the JUL framework
+12:53:59,583 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@62d0ac62 - End of configuration.
+12:53:59,583 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@150d80c4 - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+Starting FreeriderApplicationTest using Java 20.0.1 with PID 39586 (started by andy in /Users/andy/Desktop/Beuth uni/Beuth Fachrichtungen/Software Engineering 2/se2-freerider)
+No active profile set, falling back to 1 default profile: "default"
+
+(1.) FreeriderApplication instance created.
+Started FreeriderApplicationTest in 0.343 seconds (process running for 0.85)
+
+(2.) Spring Container ready.
+Hello FreeriderApplication!
+performing test: test_100()
+]]></system-out>
+  </testcase>
+  <testcase name="test_200" classname="de.freerider.application.FreeriderApplicationTest" time="0.001">
+    <system-out><![CDATA[performing test: test_200()
+]]></system-out>
+  </testcase>
+  <testcase name="test_300" classname="de.freerider.application.FreeriderApplicationTest" time="0.001">
+    <system-out><![CDATA[performing test: test_300()
+]]></system-out>
+  </testcase>
+</testsuite>
